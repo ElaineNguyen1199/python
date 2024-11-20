@@ -11,10 +11,11 @@ class Television:
         self.__channel = self.MIN_CHANNEL
 
     def power(self):
-        pass
+        self.__status = not self.__status
 
     def mute(self):
-        pass
+        if self.__status:
+            self.__muted = not self.__muted
 
     def channel_up(self):
         pass
