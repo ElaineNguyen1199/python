@@ -1,7 +1,7 @@
-import unittest
+import pytest
 from television import *
 
-class MyTestCase(unittest.TestCase):
+class Test:
     def test_init(self):
         tv = Television()
         assert str(tv) == "Power = False, Channel = 0, Volume = 0"
